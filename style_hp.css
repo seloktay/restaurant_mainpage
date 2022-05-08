@@ -1,0 +1,63 @@
+* {
+      box-sizing: border-box;
+    }
+
+body {margin: 0px;
+}
+    
+.column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 100vh; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+.half {text-align: center;
+    margin: 5px;
+    font-size:3vh;
+    align-items: center;
+    font-weight:100;
+    color: rgb(59,55,55);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    height: fit-content;}
+
+img {height: 50vh;
+    display: block;
+    margin: auto}
+ 
+.submenu {height: 45vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenu p {font-size: 5vh;}
+
+button {margin: 5px;
+    width: 25vh;
+    height: 10vh;
+    font-size: medium;
+    border: 2px solid black;
+    background-color: gray;
+    }
+
+    /* Responsive - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: 50vh
+      }
+    
+    img {height: 50vh;
+    float: left;}
+    }
+
+    
